@@ -1,6 +1,3 @@
-// Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
-
-import javax.sound.midi.SoundbankResource;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
