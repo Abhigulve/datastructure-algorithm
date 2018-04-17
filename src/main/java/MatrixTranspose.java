@@ -4,8 +4,7 @@
 public class MatrixTranspose {
     public static void main(String[] args) {
         int original[][] = {{1, 3, 4}, {2, 4, 3}, {3, 4, 5}};
-        int transpose[][] = new int[3][3];  //3
-        Transpose(original);
+        int transpose[][] = Transpose(original);
     }
 
     private static int[][] Transpose(int[][] original) {
