@@ -17,7 +17,6 @@ public class Permutations {
                 str = swap(str, l, i);
             }
         }
-
     }
 
     public static String swap(String a, int i, int j) {
