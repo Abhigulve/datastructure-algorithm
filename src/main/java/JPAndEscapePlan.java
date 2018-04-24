@@ -41,13 +41,6 @@ public class JPAndEscapePlan {
 
         }*/
 
-
-
-
-
-
-
-
         return true;
     }
 
