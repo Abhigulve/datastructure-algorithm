@@ -1,3 +1,5 @@
+package bitmanipulation;
+
 /**
  * @author Abhijeet Gulve
  */
@@ -5,7 +7,7 @@ public class AndOfSubSetsOfSet {
 
     public static void main(String[] args) {
         //System.out.println(010);
-        findSubsets(new int[]{1, 2});
+        findSubsets(new int[]{1, 2,3});
     }
 
     private static void findSubsets(int array[]) {
@@ -21,7 +23,7 @@ public class AndOfSubSetsOfSet {
                     if (count == 0) {
                         temp = array[pos];
                     } else
-                        temp = array[pos] & temp;
+                        temp = array[pos] | temp;
                     count++;
                 }
                 //this will shift this number to left so one bit will be remove
