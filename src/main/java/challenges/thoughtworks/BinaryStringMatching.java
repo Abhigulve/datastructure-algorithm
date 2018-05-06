@@ -17,12 +17,11 @@ class BinaryStringMatching {
         char[] strB = scanner.nextLine().toCharArray();
         int small = 0;
         Set<Integer> unset = new HashSet<>(len);
-
         for (int k = 0; k < len; k++) {
             if (strA[k] == '1' && strB[k] == '0') {
                 unset.add(k + 1);
             }
-            if (strA[k] == '0') {
+            if (strA[k] == '0' && strB[k] == '1' ) {
                 small = k;
                 break;
             }
