@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-class TestClass {
+class BinaryStringMatching {
 
     public static void main(String[] args) {
 

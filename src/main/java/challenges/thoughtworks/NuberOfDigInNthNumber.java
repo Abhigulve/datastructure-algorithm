@@ -1,4 +1,4 @@
-package bitmanipulation;
+package challenges.thoughtworks;
 
 import java.util.Scanner;
 
