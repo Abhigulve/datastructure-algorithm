@@ -8,7 +8,6 @@ public class UniqueNumberFromArray {
         int num = a.get(0);
 
         for (int i = 1; i < a.size(); i++) {
-
             num = num ^ a.get(i);
         }
         return num;
