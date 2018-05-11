@@ -21,7 +21,7 @@ class BinaryStringMatching {
             if (strA[k] == '1' && strB[k] == '0') {
                 unset.add(k + 1);
             }
-            if (strA[k] == '0' && strB[k] == '1' ) {
+            if (strA[k] == '0') {
                 small = k;
                 break;
             }
@@ -36,20 +36,10 @@ class BinaryStringMatching {
                 }
                 count++;
             }
-
             if (unset.size() == count || flag)
                 System.out.println("YES");
             else
                 System.out.println("NO");
         }
     }
-
-  /*  private static int compaireTo(String a1, String b1) {
-        int i = 0;
-        while (i < a1.length())
-            if (Long.parseLong(a1.substring(i, Math.min(a1.length(), 63)), 2) <= Long.parseLong(b1.substring(i, Math.min(b1.length(), 63)), 2)) {
-                i += 64;
-            } else return -1;
-        return 0;
-    }*/
 }
