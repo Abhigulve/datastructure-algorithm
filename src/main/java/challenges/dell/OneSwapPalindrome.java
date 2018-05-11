@@ -1,4 +1,4 @@
-package challenges.thoughtworks.dell;
+package challenges.dell;
 
 import java.util.Arrays;
 import java.util.Scanner;
