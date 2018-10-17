@@ -7,6 +7,16 @@
     <groupId>datastructure</groupId>
     <artifactId>datastructure</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>io.vavr</groupId>
+            <artifactId>vavr</artifactId>
+            <version>0.9.2</version>
+        </dependency>
+
+    </dependencies>
     <build>
         <plugins>
             <plugin>

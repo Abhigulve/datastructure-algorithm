@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+<div>
+    <input type="file" name="files[]" id="audios" multiple="" directory="" webkitdirectory="" mozdirectory="">
+</div>
+</body>
+
+<script>
+    $('input[type=file]').change(function () {
+        console.log(this.files[0].mozFullPath);
+    });
+</script>
+</html>
