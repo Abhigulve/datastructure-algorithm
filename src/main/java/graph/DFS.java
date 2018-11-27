@@ -23,7 +23,9 @@ public class DFS {
         marked = new boolean[V];
         edgeTo = new int[V];
         dfs(graph, 0);
-        System.out.println(edgeTo[2]);
+        for (int i = 0; i < edgeTo.length; i++) {
+            System.out.print(edgeTo[i] + " ");
+        }
     }
 
     private static void dfs(AdjucencyListGraph adjucencyListGraph, Integer v) {
@@ -32,7 +34,7 @@ public class DFS {
         for (int i = 0; i < adjucencyListGraph.adjList[v].size(); i++) {
             if (!marked[adjucencyListGraph.adjList[v].get(i)]) {
                 dfs(adjucencyListGraph, adjucencyListGraph.adjList[v].get(i));
-                edgeTo[i] = v;
+                edgeTo[adjucencyListGraph.adjList[v].get(i)] = v;
             }
         }
     }
