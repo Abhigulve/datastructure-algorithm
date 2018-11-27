@@ -7,6 +7,23 @@ import java.util.List;
 /**
  * @author Abhijeet Gulve
  */
+
+/**
+ * Find out the maximum sub-array of non negative numbers from an array.
+ * The sub-array should be continuous. That is, a sub-array created by choosing the second and fourth element and skipping the third element is invalid.
+ * <p>
+ * Maximum sub-array is defined in terms of the sum of the elements in the sub-array. Sub-array A is greater than sub-array B if sum(A) > sum(B).
+ * <p>
+ * Example:
+ * <p>
+ * A : [1, 2, 5, -7, 2, 3]
+ * The two sub-arrays are [1, 2, 5] [2, 3].
+ * The answer is [1, 2, 5] as its sum is larger than [2, 3]
+ * <p>
+ * <p>
+ * NOTE: If there is a tie, then compare with segment's length and return segment which has maximum length
+ * NOTE 2: If there is still a tie, then return the segment with minimum starting index
+ */
 public class MaxNonNegativeSubArray {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
@@ -32,7 +49,6 @@ public class MaxNonNegativeSubArray {
         System.out.println(maxset(list));
     }
 
-    //A : [ 24115, -75629, -46517, 30105, 19451, -82188, 99505, 6752, -36716, 54438, -51501, 83871, 11137, -53177, 22294, -21609, -59745, 53635, -98142, 27968, -260, 41594, 16395, 19113, 71006, -97942, 42082, -30767, 85695, -73671 ]
     public static ArrayList<Integer> maxset(List<Integer> a) {
         long currntSum = 0;
         long maxSum = 0;
