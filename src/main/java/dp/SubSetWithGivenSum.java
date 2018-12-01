@@ -14,7 +14,6 @@ public class SubSetWithGivenSum {
             return 0;
         }
         if (sum == 0) {
-//            System.out.println(1);
             return 1;
         } else if (sum < array[i]) {
             return getGivenSumSubSet(array, sum, i - 1);
