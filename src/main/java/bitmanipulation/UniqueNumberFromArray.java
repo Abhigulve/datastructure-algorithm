@@ -11,9 +11,10 @@ public class UniqueNumberFromArray {
             num = num ^ a.get(i);
         }
         return num;
+
     }
 
     public static void main(String[] args) {
-        System.out.println(singleNumber(Arrays.asList( 1, 3, 3, 6, 6, 8, 8, 2)));
+        System.out.println(singleNumber(Arrays.asList(1, 3, 3, 6, 6, 8, 8, 2)));
     }
 }
