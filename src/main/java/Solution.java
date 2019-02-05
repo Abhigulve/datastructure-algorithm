@@ -8,7 +8,7 @@ import java.util.Scanner;
 /**
  * @author Abhijeet Gulve
  */
-public class Solution {
+public class    Solution {
 
     public static void solve(int array[], int num) {
         int cont = 999999999;
