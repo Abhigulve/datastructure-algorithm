@@ -30,7 +30,7 @@ public class AddOneTooNumber {
     }
 
     public static ArrayList<Integer> plusOne(ArrayList<Integer> a) {
-        ArrayList<Integer> res = new ArrayList<>();
+       /* ArrayList<Integer> res = new ArrayList<>();
         if (a.size() == 0 || a == null) {
             return res;
         }
@@ -54,6 +54,26 @@ public class AddOneTooNumber {
             res.add(carry);
         }
         Collections.reverse(res);
+        return res;*/
+
+        int k = 0;
+        while (a.get(k) == 0) {
+            if (a.size() == (k + 1)) {
+                break;
+            }
+            k++;
+        }
+        int carry = 1;
+        ArrayList<Integer> res = new ArrayList<Integer>();
+        for (int j = a.size() - 1; j >= k; j--) {
+            res.add((a.get(j) + carry) % 10);
+            carry = (a.get(j) + carry) / 10;
+        }
+        if (carry > 0) {
+            res.add(carry);
+        }
+        Collections.reverse(res);
         return res;
     }
 }
+
