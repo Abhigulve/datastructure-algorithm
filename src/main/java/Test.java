@@ -8,7 +8,7 @@ import java.util.TreeSet;
 
 public class Test {
 	public static void main(String[] args) {
-		List<String> list = letterCombinations("8746564");
+		List<String> list = letterCombinations("23");
 		System.out.println(list);
 	}
 	
